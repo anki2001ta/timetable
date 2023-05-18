@@ -26,12 +26,12 @@ const Profile = (props: Props) => {
           <Text>Kavita Singh</Text>
         </div>
         <div className='teacher_deatils'>
-        <Text>Class Teacher - 7thD</Text>
+        <Text>Class Teacher-7thD</Text>
         <Text>Attendence - 84/100</Text>
         <Text>DOB - 08/09/1986</Text>
         </div>
         <div className='teacher_allotment'>
-        <Text className='allotment_heading'>Classess Alloted</Text>
+        <p className='allotment_heading'>Classess Alloted</p>
         <div className='teacher_subjects'>
         <div className='teacher_subject'>
         <Text>Class 7D - Maths, GK</Text>

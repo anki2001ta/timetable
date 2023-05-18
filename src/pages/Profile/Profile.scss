@@ -26,10 +26,12 @@ $heading-text-color: #454545;
     height: 482px;
     border-radius: 8px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   
     background-color: $container-bg-color;
     @include mq500px
     {
        width: 100%;
+       height:auto
     }
     
     .head{
@@ -84,6 +86,8 @@ $heading-text-color: #454545;
                 width: 85%;
                 margin:auto;
                 height: 24px;
+
+              
                 @include mq500px{
                   display: block;
                   
@@ -92,34 +96,55 @@ $heading-text-color: #454545;
                     color: #475569;
                     line-height: 24px;
                     font-size: 16px;
+                   
+                    //padding: 10px;
                     @include mq500px{
                       font-weight: 500;
+                      display: block;
+                      line-height: 25px;
+                      font-family: 'Inter';
+                      padding: 10px;
+                      
                     }
                   }
               }
               .teacher_allotment{
                 width: 85%;
                 margin: 30px auto 20px auto;
+                 @include mq500px{
+                      margin-top: 65px;
+                     }
                 .allotment_heading {
                  font-weight: 600;
                     color: #334155;
-                    line-height: 24px;
-                    font-size: 16px;
+                   
+                    @include mq500px{  
+                       //border: 1px solid pink;
+                        margin-top: 140px;
+                    }
+                  
                   }
                   .teacher_subjects
                   {
                     display: flex;
                     justify-content: space-between;
+                        @include mq500px{
+                      display: block;
+                     // border: 1px solid red;
+                      margin-top: 10px;
+                     }
             
                   }
                   .teacher_subject{
                     margin: 10px 0px;
                     display: flex;
                     flex-direction: column;
+                    
                     .ant-typography {
                         line-height: 30px;
                         color: #475569;
                         font-weight: 500;
+                      
                     }
                   }
               }
@@ -167,16 +192,39 @@ $heading-text-color: #454545;
     border-radius: 5px;
     height: 35px;
     margin: auto;
-    border: 1px solid #ccd6e2;
+    border: 1px solid #d0d6de;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    @include mq500px
+    {
+      margin-bottom: 20px;
+      width: 96%;
+      text-align: center;
+    
+    }
     .ant-typography{
         font-weight: 600;
         font-size: 16px;
         padding: 0px 15px;
+        @include mq500px
+        {
+          
+          width: 70%;
+          text-align: center;
+        
+        }
        
     }
   }
   .comment{
     color: #ea6b37;
     background-color: #f9eee3;
+    @include mq500px
+    {
+      
+      margin-right: 60px;
+      text-align: center;
+    
+    }
 }
