@@ -1,0 +1,117 @@
+@import "../../styles/variable.scss";
+@import "../../styles/mediaQuery.scss";
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    margin-top: 30px;
+
+}
+
+
+.home>div:nth-child(1){
+     width:100%;
+     height:650px;
+   //  margin-left: 20px;
+    // display: flex;
+    // gap: 35%;
+
+     
+
+}
+.home_heading{
+    font-family: 'Inter';
+   font-weight: 600;
+    font-size: 18px;
+   line-height: 26px;
+   padding: 23px 23px 2px 23px;
+   color: #454545;
+
+}
+
+.home>div:nth-child(2){
+    width:30%;
+    height:650px;
+    // border:1px solid rgb(114, 212, 28);
+    margin-right: 20px;
+   
+}
+.time_data{
+    width:828px;
+    margin-top: 20px;
+    height:80px;
+    padding:auto;
+    display: flex;
+    gap:4px;
+    padding: 5px 5px;
+    @include mq500px{
+    width: 100%;
+    }
+}
+
+.time_data>div:nth-child(1){
+    width:20%;
+    height:auto;
+    text-align: center;
+    align-items: center;
+     font-family: 'Inter';
+     font-style: normal;
+    font-weight: 700;
+     font-size: 18px;
+    line-height: 24px;
+    padding: 23px;
+    color: #908F8C;
+    ;
+}
+
+.time_data>div:nth-child(2){
+    width:80%;
+   
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #f4f4f4;
+    border-left:8px solid; 
+    border-left-color:$text-color-violet;
+    p:nth-child(1){
+        margin-top: -3px;
+        font-weight: 600;
+        color: #4D56A2;
+    }
+    p:nth-child(2){
+        margin-top: -19px;
+        font-weight: 600;
+ 
+    }
+
+}
+.colored_component{
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+  
+}
+.colored_component>div:nth-child(1){
+    width:30%;
+    border-right: 2px solid $text-color-violet;
+    height: 80%;
+    padding: 10px;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    font-size: 16px;
+   
+   
+
+}
+.colored_component>div:nth-child(2){
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.COLOR{
+    color:black
+}

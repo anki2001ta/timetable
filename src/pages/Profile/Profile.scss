@@ -1,0 +1,182 @@
+
+@import "../../styles/variable.scss";
+@import "../../styles/mediaQuery.scss";
+
+
+$container-bg-color: $body-background-white;
+
+// $head-height: 84px;
+$head-border-radius: 8px 0 0;
+
+$profile-pic-width: 124px;
+$profile-pic-height: 124px;
+$profile-pic-border-radius: 100px;
+$profile-pic-margin-top: -60px;
+$profile-pic-margin-sides: 25px;
+$profile-pic-border-width: 3px;
+$profile-pic-border-color: $body-background-white;
+
+$heading-font-size: 18px;
+$heading-font-weight: 600;
+$heading-line-height: 26px;
+$heading-text-color: #454545;
+
+.teacher_container{
+    width: 61%;
+    height: 482px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: $container-bg-color;
+    @include mq500px
+    {
+       width: 100%;
+    }
+    
+    .head{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        height: 84px;
+        background-color: $body-background-blue;
+        @include mq500px
+        {
+           height: 69px;
+        }
+    }
+    .watermark {
+        position: absolute; 
+        top: 60%;
+        left: 41%;
+        transform: translate(-50%, -50%);
+        z-index: 1; 
+        @include mq500px{
+          left: 50%;
+        }
+        img {
+          width: 232px; 
+        }
+      }
+    .design{
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+          
+
+            }
+            .name {
+                margin-top: 70px;
+                margin-bottom: 35px;
+              display: flex;
+              @include mq500px{
+                margin-bottom: 15px;
+              }
+                .ant-typography {
+                  margin-left: 20px;
+                  color: $body-background-blue;
+                  font-weight: bold;
+                  font-size: 24px;
+                }
+              }
+              .teacher_deatils{
+                font-weight: 600px;
+                display: flex;
+                justify-content: space-between;
+                width: 85%;
+                margin:auto;
+                height: 24px;
+                @include mq500px{
+                  display: block;
+                  
+                }
+                .ant-typography {
+                    color: #475569;
+                    line-height: 24px;
+                    font-size: 16px;
+                    @include mq500px{
+                      font-weight: 500;
+                    }
+                  }
+              }
+              .teacher_allotment{
+                width: 85%;
+                margin: 30px auto 20px auto;
+                .allotment_heading {
+                 font-weight: 600;
+                    color: #334155;
+                    line-height: 24px;
+                    font-size: 16px;
+                  }
+                  .teacher_subjects
+                  {
+                    display: flex;
+                    justify-content: space-between;
+            
+                  }
+                  .teacher_subject{
+                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    .ant-typography {
+                        line-height: 30px;
+                        color: #475569;
+                        font-weight: 500;
+                    }
+                  }
+              }
+    .teacher_profile_pic{
+        width: 124px;
+        height: 124px;
+        border-radius: 100px;
+        margin: -60px 25px;
+        border: 3px solid $body-background-white;
+        @include mq500px
+        {
+          width: 94.5px;
+        height: 91px;
+        margin: -50px 15px;
+        }
+        Img{
+            width: $profile-pic-width - 5px;
+            height: $profile-pic-height - 4px;
+            border-radius: $profile-pic-border-radius;
+            @include mq500px
+            {
+              width: 90px;
+            height: 91px;
+            }
+        }
+    }
+}
+
+.teacher_profile{
+    width: 100%;
+    height: 90vh;
+    background-color: $body-background-white;
+    padding: 32px;
+}
+
+.teacher_heading{
+    color: $heading-text-color;
+    line-height: $heading-line-height;
+    font-size: $heading-font-size;
+    font-weight: $heading-font-weight;
+}
+.audit{
+    // color: #1C1B1F;
+    width: 85%;
+    border-radius: 5px;
+    height: 35px;
+    margin: auto;
+    border: 1px solid #ccd6e2;
+    padding: 5px;
+    .ant-typography{
+        font-weight: 600;
+        font-size: 16px;
+        padding: 0px 15px;
+       
+    }
+  }
+  .comment{
+    color: #ea6b37;
+    background-color: #f9eee3;
+}

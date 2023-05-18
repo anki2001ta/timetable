@@ -1,0 +1,218 @@
+@import "../../styles/variable.scss";
+@import "../../styles/mediaQuery.scss";
+
+.nav{
+    background: $text-color-white;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    padding: 20px 40px;
+    border-bottom: 1px solid #bfbfbf;
+
+    @include mq500px
+    {
+      display:flex;
+      justify-content:space-between;
+      align-items: center;
+      padding: 20px 0px 22px 18px;
+      height: 3.5rem;
+    }
+    .search{
+        height: 2.5rem;
+        width: 23.375rem;
+        // margin: 1.2rem 0 0 3rem;
+        border-radius: 0.4rem;
+        @include mq500px
+        {
+          display: none;
+        }
+    }
+    .mobile_logo{
+       display:none;
+       @include mq500px{
+        display:block;
+        margin-left:40%
+       }
+       
+       }
+       .menu_button{
+        display: none;
+      }
+    .nav_noti{
+       background: $text-color-white;
+        width: 20%;
+       display: flex;
+       align-items: center;
+       margin-left: 30px;
+       justify-content: space-evenly;
+        .help_icon{
+            width: 45px;
+               height: 45px;
+               border-radius: 50%;
+               display: inline-block;
+               text-align: center;
+              padding: 0.47rem;
+               background-color: $background-blue;
+        }
+        .nav_icons{
+            width: 45px;
+               height: 45px;
+               border-radius: 50%;
+               display: inline-block;
+               text-align: center;
+              padding: 0.67rem;
+              border: 2px solid #C3D4E9;
+              .chat_icon{
+                color: $color-primary;
+                font-size: 24px
+              }
+
+        }
+        .bell_icons{
+          width: 45px;
+         height: 45px;
+         border-radius: 50%;
+         display: inline-block;
+         text-align: center;
+        padding: 0.60rem;
+        border: 2px solid #C3D4E9; 
+        .chat_icon{
+          color: #1C1B1F;
+          font-size: 24px
+        }    
+        }
+    }
+
+}
+.noti_msg {
+  display: flex;
+
+}
+
+.noti_msg img {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+}
+.noti_msg div{
+  padding: 12px;
+line-height: 5px;
+}
+.noti_noti {
+  display: flex;
+}
+
+.noti_noti img {
+  width: 70px; 
+  height: 70px; 
+  border-radius: 50%; 
+}
+.noti_noti div{
+  padding: 18px;
+line-height: 5px;
+}
+.mob_menu{
+  display: none;
+  width: 20px;
+  @include mq500px{
+  display: block;
+  }
+}
+.ant-dropdown-menu-item {
+  background: #1560bd;
+	
+}
+.ant-dropdown {
+  background: #1560bd;
+}
+.ant-dropdown-menu-title-content{
+  color: #FFFFFF;
+  
+}
+.ant-dropdown-menu-item-danger{
+background-color: red;
+}
+.ant-dropdown-menu-item-icon{
+  color: #FFFFFF;
+}
+
+@media ( max-width: 500px) {
+    .nav {
+           .menu_button{
+            display: block;
+            color: #4E4B66;
+            font-size: 15px; 
+          
+          }
+           .nav_noti{
+               background: #FFFFFF;
+                width: 28%;
+
+                .help_icon:first-child {
+                   display: none;
+                 }
+                .nav_icons{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 2px solid #C3D4E9;
+                      padding: 0.25rem;
+
+                    align-items: center;
+                    .chat_icon{
+                      font-size: 15px
+                    }
+
+
+                }
+                .bell_icons{  
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  border: 2px solid #C3D4E9;
+                    padding: 0.13rem;
+
+                  align-items: center;
+                  .chat_icon{
+                    font-size: 15px
+                  }
+                }
+            }
+
+        }
+        div.ant-drawer-body{
+          background: #1560bd;
+        }
+        .menu{
+          background: #1560bd;
+          color: #FFFFFF;
+       font-size: 1rem;
+			margin-bottom: 25%;
+      .ant-menu-item {
+				border-radius: 30px 0 0 30px;
+				margin: 0 0 0 0.62rem;
+				height: 3.2rem;
+				font-weight: 600;
+				padding-left: 2rem;
+
+				&:hover {
+					color: #1560bd;
+					background-color: aliceblue;
+				}
+
+				.anticon {
+					font-size: 20px;
+					margin: 1rem 0.5rem;
+				}
+			}
+        }
+        .mob_bar{
+          background: #1560bd;
+          color: #FFFFFF;
+          .mobile_logo{
+           height: 50px;
+           width: 300px;  
+           margin-bottom:30px;    
+          }
+        }
+  }

@@ -1,0 +1,108 @@
+@import "../../styles/variable.scss";
+
+.post {
+
+	.header {
+		color: $text-color-black;
+		font-weight: 600;
+		font-size: 18px;
+	}
+	.card {
+		width: 100%;
+		padding: 16px 10px;
+		height: max-content;
+		overflow-y: scroll;
+		background: $background-white;
+		border: 1px solid $border-light-white;
+		box-shadow: 0px 4px 10px rgba(30, 30, 30, 0.17);
+		border-radius: 8px;
+
+		.textbox {
+			border: 1px solid $text-color-light-white;
+			border-radius: 4px;
+			padding: 10px;
+
+			textarea {
+				// padding-bottom: 20%;
+				background-color: $background-white;
+				color: $text-color-black;
+				border: none;
+				outline: none;
+				resize: none;
+				overflow-y: visible;
+				scrollbar-track-color: transparent;
+				width: 100%;
+
+				&:focus {
+					border: none;
+					outline: none;
+					box-shadow: none;
+				}
+
+				&:hover {
+					outline: none;
+					border: none;
+				}
+			}
+
+			.addition {
+				padding: 0 10px;
+				display: flex;
+				justify-content: space-between;
+
+				.inputs {
+					display: flex;
+					cursor: pointer;
+
+					span {
+						margin-right: 5px;
+					}
+				}
+				.posting {
+					background: $background-blue;
+					border-radius: 3px;
+					padding: 2px 20px;
+					color: $text-color-white;
+				}
+			}
+		}
+	}
+
+	.sharing {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 15px 0;
+
+		.reels {
+			img {
+				margin-right: 5px;
+			}
+			padding: 5px 10px;
+			background: $background-light-yellow;
+			border-radius: 4px;
+			color: $text-color-yellow;
+		}
+		.group {
+			img {
+				margin-right: 5px;
+			}
+			color: $text-color-red-2;
+			padding: 5px 10px;
+			background: $background-light-red-2;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-ms-border-radius: 4px;
+			-o-border-radius: 4px;
+		}
+		.live {
+			background: $background-blue-2;
+			border-radius: 4px;
+			color: $text-color-violet-2;
+			img {
+				margin-right: 5px;
+			}
+			padding: 5px 10px;
+		}
+	}
+}

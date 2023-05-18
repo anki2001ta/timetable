@@ -1,0 +1,93 @@
+// import the color variables
+@import "../../styles/variable.scss";
+
+.signin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	height: 100vh;
+
+	.logo {
+		align-items: center;
+		padding-bottom: 20px;
+	}
+
+	.card {
+		min-width: 700px;
+		padding: 40px;
+		border-radius: 10px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+		.card-title {
+			color: $text-color-blue;
+			font-size: 54px;
+			margin-bottom: 40px;
+		}
+
+		h2 {
+			font-size: 28px;
+			text-align: center;
+			color: $text-color-blue;
+		}
+
+		form {
+			margin-top: 30px;
+
+			.ant-form-item {
+				margin-bottom: 20px;
+			}
+
+			.ant-form-item-label {
+				label {
+					font-weight: 600;
+					color: $text-color-black;
+				}
+			}
+
+			input {
+				width: 100%;
+				padding: 10px;
+				border-radius: 5px;
+				color: $text-color-black;
+				margin-bottom: 20px;
+
+				&:hover,
+				&:focus {
+					border-color: $background-blue;
+				}
+			}
+
+			button {
+				width: 100%;
+				height: 50px;
+				padding: 5px;
+				border-radius: 5px;
+				border: none;
+				background-color: $background-blue;
+				color: $text-color-white;
+				font-weight: bold;
+				cursor: pointer;
+
+				&:hover {
+					background-color: $background-blue, 10%;
+				}
+
+				&:active {
+					background-color: $background-blue, 20%;
+				}
+
+				&:focus {
+					border: none;
+					box-shadow: none;
+				}
+
+				&[disabled] {
+					background-color: $background-light-gray;
+					cursor: not-allowed;
+				}
+			}
+		}
+	}
+}

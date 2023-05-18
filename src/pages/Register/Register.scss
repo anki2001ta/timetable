@@ -1,0 +1,114 @@
+@import "../../styles/variable.scss";
+
+.signup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	height: 100vh;
+
+	.logo {
+		align-items: center;
+		padding-bottom: 20px;
+	}
+
+	.card {
+		min-width: 700px;
+		padding: 40px;
+		border-radius: 10px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+		.card-title {
+			color: $text-color-blue;
+			font-size: 54px;
+			margin-bottom: 40px;
+		}
+
+		h2 {
+			font-size: 28px;
+			text-align: center;
+			color: $text-color-blue;
+		}
+
+		form {
+			margin-top: 30px;
+
+			.ant-form-item {
+				margin-bottom: 20px;
+			}
+
+			.ant-form-item-label {
+				label {
+					font-weight: 600;
+					color: $text-color-black;
+				}
+			}
+
+			input {
+				width: 100%;
+				padding: 10px;
+				border-radius: 5px;
+				color: $text-color-black;
+
+				:not(.dob) {
+					margin-bottom: 20px;
+				}
+
+				&:hover,
+				&:focus {
+					border-color: $background-blue;
+				}
+			}
+
+			.ant-select {
+				width: 100%;
+				border-radius: 5px;
+				color: $text-color-black;
+
+				&:hover,
+				&:focus {
+					border-color: $background-blue;
+				}
+			}
+
+			.ant-picker {
+				color: $text-color-black;
+				width: 100%;
+			}
+
+			button {
+				background-color: $background-blue;
+				color: $text-color-white;
+				border: none;
+				border-radius: 5px;
+				height: 50px;
+				width: 100%;
+				padding: 5px;
+				padding: 0 30px;
+				transition: all 0.3s ease;
+
+				&:hover,
+				&:focus {
+					background-color: $background-blue;
+					border-color: $background-blue;
+					color: $text-color-white;
+				}
+			}
+		}
+
+		p {
+			margin-top: 20px;
+			text-align: center;
+			color: $text-color-gray;
+
+			a {
+				color: $text-color-blue;
+
+				&:hover {
+					color: $text-color-blue;
+				}
+			}
+		}
+	}
+}

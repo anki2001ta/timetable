@@ -1,0 +1,137 @@
+.ant-space {
+    width: 97%;
+  }
+  .wrapp{
+    margin-left: 50px;
+    width: 97%;
+    margin-top: 60px;
+  }
+  .collapse{
+    border:1px solid rgb(207, 203, 203);
+    border-radius: none;
+  }
+  .panel{
+    border-radius: none;
+     font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+color: #334155;
+
+
+  }
+ .para{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    
+    
+    text-align: justify;
+    
+    color: #454545;
+    
+  }
+h4{
+text-align: left;
+margin-top: 120px;
+  }
+
+  
+  .peer_sub2>input{
+    width: 98%;
+    height: 48px;
+    background: #FDFEFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    text-indent: 20px;
+   
+
+    h4{
+        margin-top: 15px;
+    }
+
+
+
+  }
+  
+  .peer_sub2>h4:nth-child(3),.peer_sub2>h4:nth-child(5){
+    margin-top: 30px;
+    
+  }
+  
+.contex2{
+    input{
+        width:98%;
+        height: 48px;
+        background: #FDFEFF;
+        border: 1px solid #CBD5E1;
+        border-radius: 10px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        text-indent: 20px;
+    }
+}
+
+.contex2>h4{
+    margin-top: 30px;
+    }
+    .mini_div_Container2>div:nth-child(3){
+        border:2px dotted #CBD5E1;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(30, 30, 30, 0.17);
+     
+    }
+    .mini_div_Container2>div:nth-child(3)>p{  
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.81507px;
+    line-height: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0F0F0F;
+    
+    border-radius: 8px;
+    
+    }
+    .mini_div_Container2>div:nth-child(3)>img{
+        margin-top: 35%;
+    }
+    .mini_div2>img{
+        margin-top: 10px;
+    }
+
+    .mini_div2{
+        display:flex;
+        justify-content: space-between;
+      
+       
+    }
+    .mini_div_Container2{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    
+        div{
+            width: 116px;
+            height: 116px;
+         
+            border-radius: 6px;
+            flex-grow: 0;
+           
+            align-items: center;
+        }
+    
+       
+    
+    }

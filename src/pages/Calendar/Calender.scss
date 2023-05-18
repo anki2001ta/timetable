@@ -1,0 +1,77 @@
+
+
+
+.box{
+    padding: 35px;
+}
+.calender_cards{
+color: #475569;
+    h1{
+font-family: Inter;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: justified;
+margin-top: 80px;
+
+    }
+    .cards{
+        border: 1px solid #fbe7a5;
+        height: 244px;
+        width: 360px;
+        border-radius: 8px;
+        background-color: #FFFCF2;
+        padding: 15px;
+        p{
+font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: justified;
+
+        }
+        .time{
+            display: flex;
+            gap: 10px;
+            margin-bottom:20px;
+            margin-top: -10px;
+            color:#475569; 
+            font-size: 14px;
+                font-weight: 400; 
+        }
+        .class_sub{
+            display: flex;
+            gap: 50px;
+      
+        }
+    }
+}
+.chapter{
+    display: flex;
+    gap: 10px;
+    .chapter_name{
+        font-family: Inter;
+       font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+      letter-spacing: 0em;
+      text-align: justified;
+      margin-top: 5px;
+
+    }
+}
+.edit{
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 18px;
+    button{
+        background-color: #FFFCF2 ;
+        text-align: center;
+    }
+}
+
+.wrapp_comp{
+    margin-top: 80px;
+}
