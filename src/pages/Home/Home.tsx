@@ -10,30 +10,25 @@ const Home = () => {
     <div>
       {/* flex div */}
       <div className="home">
-
-
-
-        
         <div >
-          {/* time componenet */}
             <div className="home_heading">TimeTable</div>
             <div className="time_data">
-              <div>09:00</div>
+              <div><p>09:30</p></div> 
               <div className="colored_component">
                 <div>
-                  <div>
-                    <Checkbox />
+                  <div className="checkbox">
+                    <Checkbox/>
                   </div>
                   <div>
-                    <p>7th D</p>
-
-                    <p>9:30-10:30</p>
+                    <h5>7th D</h5>
+                    <h5>9:30-10:30</h5>
                   </div>
                 </div>
+               
                 <div>
                   <p>Geography</p>
                   <p>Chapter 1 : Name of the Chapter</p>
-                </div>
+                </div> 
                 <Button>
                   <EditOutlined />
                 </Button>
@@ -41,20 +36,22 @@ const Home = () => {
             </div>
             {/* time component  end*/}
             {/* acrodion section start */}
-           <div>
+          </div> 
 
-          <TaskAndGoals/>
-           </div>
+          {/* <TaskAndGoals/> */}
+           {/* </div> */}
           
    
            {/* Acrodion section end */}
-            </div>
+            {/* </div> */}
             {/* THIS IS THE SIDE POST BAR */}
             {/* <div className="post_home">
-        <Post />
-     </div>  */}
+        <Post />*/}
+     </div>  
      
-      </div> 
+   
+     
+
     </div>
   );
 };
